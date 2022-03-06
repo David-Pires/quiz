@@ -18,4 +18,7 @@ export default class RespostaModel {
   get revelada() {
     return this.#revelada;
   }
+  get revelada() {
+    return this.#revelada;
+  }
 }
