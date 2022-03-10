@@ -1,4 +1,5 @@
 import questoes from '../bancoDeQuestoes'
+// eslint-disable-next-line import/no-anonymous-default-export
 export default (req, res) => {
   const idSelecionado = +req.query.id
 
