@@ -1,3 +1,8 @@
+
+After of cloning this project install inside the main folder the following dependencies through your favorite terminal npm install react react-dom next
+do not forget to have typeScript settled as well. 
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
