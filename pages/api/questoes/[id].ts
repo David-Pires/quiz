@@ -12,5 +12,5 @@ export default (req, res) => {
     res.status(204).send()
   }
 
-  res.status(200).json(questoes[0].paraObjeto())
+  // res.status(200).json(questoes[0].paraObjeto())
 }
