@@ -10,8 +10,17 @@ interface RespostaProps {
 
 export default function Resposta(props) {
   return (
-    <div>
-
+    <div className={styles.resposta}>
+      <div className={styles.conteudoResposta}>
+        <div className={styles.frente}>
+          <div className={styles.letra}>
+            {props.letra}
+          </div>
+          <div className={styles.valor}>
+            {props.letra}
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
