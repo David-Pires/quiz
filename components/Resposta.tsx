@@ -8,7 +8,8 @@ interface RespostaProps {
   corLetra: string
 }
 
-export default function Resposta(props) {
+export default function Resposta(props: RespostaProps) {
+  const resposta = props.valor
   return (
     <div className={styles.resposta}>
       <div className={styles.conteudoResposta}>
@@ -17,7 +18,7 @@ export default function Resposta(props) {
             {props.letra}
           </div>
           <div className={styles.valor}>
-            {props.letra}
+            {props.valor}
           </div>
         </div>
       </div>
