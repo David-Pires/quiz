@@ -20,6 +20,9 @@ export default function Resposta(props: RespostaProps) {
           <div className={styles.valor}>
             {props.valor}
           </div>
+          <div className={styles.verso}>
+
+          </div>
         </div>
       </div>
     </div>

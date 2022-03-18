@@ -1,12 +1,13 @@
+/* eslint-disable react/jsx-key */
 import styles from '../styles/Questao.module.css'
 import QuestaoModel from '../model/questao'
 import Enunciado from './Enunciado'
 import Resposta from './Resposta'
 
 
-interface QuestaoProps {
-  valor: QuestaoModel
-}
+  interface QuestaoProps {
+    valor: QuestaoModel
+  }
 
 
   export default function Questao(props: QuestaoProps) {
@@ -31,5 +32,4 @@ interface QuestaoProps {
       {renderizarRespostas()}
     </div>
   )
-
 }
