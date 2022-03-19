@@ -13,7 +13,6 @@ export default class QuestaoModel {
     this.#enunciado = enunciado;
     this.#respostas = respostas;
     this.#acertou = acertou;
-    this.#acertou = acertou;
 
   }
 
