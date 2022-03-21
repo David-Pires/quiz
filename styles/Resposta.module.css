@@ -1,3 +1,20 @@
 .resposta {
   display: flex;
 }
+.letra {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  font-size:1.3rem;
+  font-weight: 700;
+}
+
+.valor{
+  font-size: 1.3rem;
+  font-weight: 700;
+  
+
+}
