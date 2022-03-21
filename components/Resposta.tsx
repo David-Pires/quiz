@@ -16,6 +16,8 @@ export default function Resposta(props: RespostaProps) {
         <div className={styles.frente}>
           <div className={styles.letra}>
             {props.letra}
+            {props.e}
+
           </div>
           <div className={styles.valor}>
             {props.valor}
