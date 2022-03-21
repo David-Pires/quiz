@@ -13,6 +13,7 @@ export default function Home() {
   const [questao, setQuestao] = useState(questaoMock)
   function respostaFornecida(indice: number) {
     console.log(indice)
+    setQuestao(questao.responderCom(indice))
   }
 
   return (
