@@ -19,7 +19,7 @@ export default function Resposta(props: RespostaProps) {
 
           </div>
           <div className={styles.valor}>
-            {props.valor}
+            {resposta.valor}
           </div>
           <div className={styles.verso}>
 
