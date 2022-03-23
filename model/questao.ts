@@ -42,7 +42,7 @@ export default class QuestaoModel {
     const respostas = this.#respostas.map((resposta, i) => {
       const respostaSelecionada = indice === i     
       const deveRevelar = respostaSelecionada || resposta.certa
-      return respostaSelecionada ? resposta.revelar() : resposta
+      return deveRevelar ? resposta.revelar() : resposta
     })
     return new QuestaoModel(this.id, this.enunciado, respostas, acertou)
   }
