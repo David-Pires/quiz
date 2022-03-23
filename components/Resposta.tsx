@@ -15,16 +15,20 @@ export default function Resposta(props: RespostaProps) {
     <div className={styles.resposta}
     onClick={() => props.respostaFornecida(props.indice)}>
       <div className={styles.conteudoResposta}>
-        {/* <div className={styles.frente}>
+        {resposta.revelada ? (
+
+        <div className={styles.frente}>
           <div className={styles.letra}
             style={{backgroundColor: props.corFundoLetra}}>
-            
-            {props.letra}           
-
+               {props.letra}
           </div>
           <div className={styles.valor}>
             {resposta.valor}
-          </div> */}
+          </div>
+        ) : (
+
+        )}
+
           <div className={styles.verso}>
             {resposta.certa ? (
               <div className={styles.certa}>
