@@ -5,7 +5,7 @@ interface TemporizadorProps {
   duracao: number
   tempoEsgostado: () => void
 }
-export default function Temporarizador(props: TemporizadorProps) {
+export default function Temporizador(props: TemporizadorProps) {
   return (   
       <div className={styles.temporizador}>
         <CountdownCircleTimer
