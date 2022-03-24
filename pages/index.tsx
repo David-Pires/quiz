@@ -16,9 +16,12 @@ export default function Home() {
     setQuestao(questao.responderCom(indice))
   }
 
-  function tempoEsgotado() {    
-    setQuestao(questao.responderCom(-1))
+  function tempoEsgotado() {  
+    if(questao.naoRespondida) {
+      setQuestao(questao.responderCom(-1))
+    }
   }
+    
 
   return (
     <div style={{
