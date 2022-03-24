@@ -1,7 +1,7 @@
 
 After of cloning this project install inside the main folder the following dependencies through your favorite terminal 
 
-> npm install react react-dom next
+> npm i install react react-dom next
 > 
 do not forget to have typeScript configured as well. 
 
