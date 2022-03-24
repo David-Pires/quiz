@@ -1,10 +1,13 @@
 
-After of cloning this project install inside the main folder the following dependencies through your favorite terminal npm install react react-dom next
+After of cloning this project install inside the main folder the following dependencies through your favorite terminal 
+
+> npm install react react-dom next
+> 
 do not forget to have typeScript configured as well. 
 
 A npm React count down time is also used in this project, so be certain to install it
 
-npm i react-countdown-circle-timer 
+> npm i react-countdown-circle-timer 
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
