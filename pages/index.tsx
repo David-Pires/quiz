@@ -3,6 +3,7 @@ import Questao from '../components/Questao'
 import QuestaoModel from '../model/questao'
 import RespostaModel from '../model/resposta'
 
+
 const questaoMock = new QuestaoModel(1, 'Qual é a melhor cor?', [
   RespostaModel.errada('Verde'),
   RespostaModel.errada('Vermelha'),
