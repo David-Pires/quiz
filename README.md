@@ -1,7 +1,9 @@
 
 After of cloning this project install inside the main folder the following dependencies through your favorite terminal 
 
-> npm i install react react-dom next
+> npm i react-countdown-circle-timer
+> 
+> link https://www.npmjs.com/package/react-countdown-circle-timer
 > 
 do not forget to have typeScript configured as well. 
 
