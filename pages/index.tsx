@@ -31,6 +31,7 @@ export default function Home() {
       alignItems: 'center',
     }}>
       <Questao valor={questao} 
+      tempoPraResposta={5}
       respostaFornecida={respostaFornecida} 
       tempoEsgotado={tempoEsgotado}/>
     </div>
