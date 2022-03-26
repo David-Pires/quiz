@@ -1,4 +1,10 @@
 .botao{
-  display: flex;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 200;
+  font-size: 1.2rem;
+  border:none;
+  padding: 10px 25px;
   background-color: #9885f0;
+  margin-top: 40px;
 }

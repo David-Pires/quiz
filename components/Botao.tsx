@@ -1,14 +1,27 @@
+import Link from 'next/link'
 import styles from '../styles/Botao.module.css'
 
 interface BotaoProps {
-  href?: string
   texto: string
+  href?: string
   onClick?: (e: any) => void
 }
-export default function Botao(prop: BotaoProps) {
-  return (
-    <button>
+export default function Botao(props: BotaoProps) {
 
-    </button>
-  )
+  function renderizarBotao( ) {
+    return (
+      <button className={styles.botao}>
+          {props.onClick}
+          {props.texto}
+        </button>
+    )
+  }
+
+  return props.href ? (
+    
+    <Link href={props.href} >
+      {renderizarBotao()}
+    </Link>
+  ) : renderizarBotao()
 }
+
