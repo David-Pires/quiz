@@ -1,4 +1,13 @@
+|  | Quiz |  |
+|----------|----------|----------|
+| Responda dentro tempo |  ![image](https://user-images.githubusercontent.com/78885070/160237846-4a1932b1-112c-4d82-843a-4bf9c8f2af67.png) | Multiplas escolhas |
 
+
+
+
+
+
+temporary image of the main page of question for the game 
 After of cloning this project install inside the main folder the following dependencies through your favorite terminal 
 
 > npm install react react-dom next
