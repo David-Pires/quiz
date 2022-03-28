@@ -39,11 +39,11 @@ export default function Home() {
   }
 
   function idProximaPergunta() {
-    if(questao) {
+    // if(questao) {
+    // }
 
       const proximoIndice = idsDasQuestoes.indexOf(questao.id) + 1
       return idsDasQuestoes[proximoIndice]
-    }
   }
   function irPraProximoPasso() {
     const proximoId = idProximaPergunta()
@@ -62,12 +62,16 @@ export default function Home() {
     })
   }
    
-  return (    
-      <Questionario
-        questao={questao}
-        ultima={idProximaPergunta() === undefined}
-        questaoRespondida={questaoRespondida}
-        irPraProximoPasso={irPraProximoPasso}
-      />             
-  )
-}
+  return questao ?  (
+
+    <Questionario
+    questao={questao}
+    ultima={idProximaPergunta() === undefined}
+    questaoRespondida={questaoRespondida}
+    irPraProximoPasso={irPraProximoPasso}
+  /> 
+  ) : false    
+  }
+
+      
+                  
