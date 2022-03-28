@@ -36,9 +36,10 @@ export default class RespostaModel {
 //resp.metodoDeInstancia()
 //respostaModel.metodoStatic
 
-  static criarUsandoObjeto(obj) : RespostaModel {
+  static criarUsandoObjeto(obj: RespostaModel) : RespostaModel {
     return new RespostaModel(obj.valor, obj.certa, obj.revelada)
   }
+  
   paraObjeto() {
     return {
       valor: this.#valor,
