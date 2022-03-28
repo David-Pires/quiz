@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Questionario from '../components/Questionario'
 import QuestaoModel from '../model/questao'
 import RespostaModel from '../model/resposta'
@@ -20,8 +20,18 @@ export default function Home() {
   async function carregarIdsDasQuestoes(){ 
     const resp = await fetch(`${BASE_URL}/questionario`)
     const idsDasQuestoes = await resp.json()
+    setIdsDasQuestoes(idsDasQuestoes)
   } 
 
+  async function carregarQuestao(idQuestao: number){ 
+    const resp = await fetch(`${BASE_URL}/questoes/${idQuestao}`)
+    const json = await resp.json()
+    console.log(json)
+  } 
+
+  useEffect(() => {
+    carregarIdsDasQuestoes()
+  }, [])
   
   function questaoRespondida(questao: QuestaoModel) {
 
