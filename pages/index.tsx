@@ -13,14 +13,15 @@ const questaoMock = new QuestaoModel(1, 'Qual é a melhor cor?', [
 
 const BASE_URL = 'http://localhost:3000/api'
 
-
-async function carregarIdsDasQuestoes(){ 
-  const resp = await fetch(`${BASE_URL}/questionario`)
-} 
-
 export default function Home() {
   const [questao, setQuestao] = useState(questaoMock)
 
+  async function carregarIdsDasQuestoes(){ 
+    const resp = await fetch(`${BASE_URL}/questionario`)
+    const idsDasQuestoes = await resp.json()
+  } 
+
+  
   function questaoRespondida(questao: QuestaoModel) {
 
   }
