@@ -46,19 +46,27 @@ export default function Home() {
     setRespostasCertas(respostasCertas + (acertou ? 1 : 0))
   }
 
-  function irProProximoPasso() {
-    
+  function idProximaPergunta() {
+    const proximoIndice = idsDasQuestoes.indexOf(questao.id) + 1
+    return idsDasQuestoes[proximoIndice]
   }
-    
+  function irPraProximoPasso() {
+    const proximoId = idProximaPergunta()
+    proximoId ? irPraProximaQuestao(proximoId) : finalizar()
+  }
+  function irPraProximaQuestao(proximoId: number) {
+    carregarQuestao(proximoId)
+  }
+  function finalizar() {
 
+  }
+   
   return (    
-    
       <Questionario
         questao={questao}
-        ultima={false}
+        ultima={idProximaPergunta() === undefined}
         questaoRespondida={questaoRespondida}
-        irPraProximoPasso={irProProximoPasso}
-      />    
-         
+        irPraProximoPasso={irPraProximoPasso}
+      />             
   )
 }
