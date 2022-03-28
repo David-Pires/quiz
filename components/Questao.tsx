@@ -27,7 +27,7 @@ export default function Questao(props: QuestaoProps) {
     return questao.respostas.map((resposta, i) => {
       return (
         <Resposta
-        key={i}
+        key={`${questao.id}-${i}`}
         valor={resposta}
         indice={i}
         letra={letras[i].valor}
