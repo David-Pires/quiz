@@ -22,4 +22,4 @@ export default function Temporizador(props: TemporizadorProps) {
           </CountdownCircleTimer>
       </div>    
   )
-}
+}//lo
