@@ -32,6 +32,10 @@ export default function Home() {
   useEffect(() => {
     carregarIdsDasQuestoes()
   }, [])
+
+  useEffect(() => {
+    idsDasQuestoes.length > 0 && carregarQuestao(idsDasQuestoes[0])
+  }, [idsDasQuestoes])
   
   function questaoRespondida(questao: QuestaoModel) {
 
