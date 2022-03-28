@@ -30,13 +30,15 @@ export default class RespostaModel {
   revelar() {
     return new RespostaModel(this.#valor, this.#certa, true)
   }
-  
+
 //METODO DE INSTANCIA CRIASE 
 //CONST RESP = new RespostaModel(...)
 //resp.metodoDeInstancia()
 //respostaModel.metodoStatic
 
-  static
+  static criarUsandoObjeto(obj) : RespostaModel {
+    return new RespostaModel(obj.valor, obj.certa, obj.revelada)
+  }
   paraObjeto() {
     return {
       valor: this.#valor,
