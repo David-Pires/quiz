@@ -22,23 +22,14 @@ export default function Home() {
   }
     
 
-  return (
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      height: '100vh',
-    }}>
+  return (    
+    
       <Questionario
         questao={questao}
         ultima={false}
         questaoRespondida={questaoRespondida}
         irPraProximoPasso={irProProximoPasso}
-      />
-
-      
-    </div>
-      
+      />    
+         
   )
 }
