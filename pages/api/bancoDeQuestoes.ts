@@ -27,12 +27,7 @@ new QuestaoModel( 204, 'Qual é o triângulo que tem todos os lados diferentes',
   RespostaModel.errada('Trapézio'),
   RespostaModel.certa('Escaleno'),   
 ]),
-new QuestaoModel( 205, '', [
-  RespostaModel.errada(''),
-  RespostaModel.errada(''),
-  RespostaModel.errada(''),
-  RespostaModel.certa(''),   
-]),
+
 ]
   
 export default questoes
