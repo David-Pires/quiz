@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import Questionario from '../components/Questionario'
 import QuestaoModel from '../model/questao'
 import { useRouter } from 'next/router'
-const BASE_URL = 'https://https://quiz-pi-gules.vercel.app/'
+const BASE_URL = 'https://quiz-4kzz30mfj-david-pires.vercel.app/'
 
 export default function Home() {
   const router = useRouter()
