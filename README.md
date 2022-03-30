@@ -1,6 +1,6 @@
 |  | Quiz |  |
 |----------|----------|----------|
-| Responda dentro tempo | ![image](https://user-images.githubusercontent.com/78885070/160886304-d654cf3a-c5b9-474f-9c3a-f59595959168.png) | Multiplas escolhas |
+| Responda dentro tempo | ![image](https://user-images.githubusercontent.com/78885070/160886304-d654cf3a-c5b9-474f-9c3a-f59595959168.png) | Multiplas escolhas - somente uma resposta é a correta |
 
 
 
